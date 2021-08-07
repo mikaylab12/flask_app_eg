@@ -201,7 +201,7 @@ def get_post(post_id):
 
     return jsonify(response)
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     app.debug = True
     app.run()
 
