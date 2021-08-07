@@ -28,6 +28,7 @@ def fetch_users():
 
 users = fetch_users()
 
+
 def init_user_table():
     conn = sqlite3.connect('blog.db')
     print("Opened database successfully")
@@ -199,3 +200,8 @@ def get_post(post_id):
         response["data"] = cursor.fetchone()
 
     return jsonify(response)
+
+if __name__ = '__main__':
+    app.debug = True
+    app.run()
+
